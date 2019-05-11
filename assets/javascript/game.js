@@ -12,8 +12,8 @@ var shotFiredSound;
 var themeSong;
 
 
-shotFiredSound = new sound("/Users/gavin/OneDrive/Desktop/BOOTCAMP/REPOSITORIES/word-guess-game/assets/sounds/shot.mp3");
-themeSong = new sound("/Users/gavin/OneDrive/Desktop/BOOTCAMP/REPOSITORIES/word-guess-game/assets/sounds/theme.mp3");
+shotFiredSound = new sound("assets/sounds/shot.mp3");
+themeSong = new sound("assets/sounds/theme.mp3");
 
 // Functions
 //New game function. Selects new word, resets variables (except wins and losses for score-keeping purposes) and console logs them.
@@ -102,14 +102,12 @@ function endTurn() {
         document.getElementById("caption").innerHTML = "You freed Tuco! Click the noose in the top left to play again with a new word!";
         document.getElementById("winCounter").innerHTML = wins;
         document.getElementById("tuco").src = "assets/images/tuco4.jpg";
-        themeSong.pause();
     }
     else if (guessesLeft == 0) {
         losses++;
         document.getElementById("caption").innerHTML = "Tuco's dead. Don't feel too bad. He was wanted by the Federales for a long list of crimes. You can try again with a new word by clicking the noose in the top left.";
         document.getElementById("lossCounter").innerHTML = losses;
         document.getElementById("tuco").src = "assets/images/tuco3.jpg";
-        themeSong.pause();
     }
 }
 
