@@ -13,27 +13,31 @@
   <!-- Navbar with reset button -->
     <header>
       <nav class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-          <img src="assets/images/noose.jpg" width="30" height="30" alt="reset" id="resetButton">
+        <a class="navbar-brand">
+          <img src="assets/images/noose.jpg" width="30" height="30" alt="New Game" id="newGameButton" onclick="newGame()">
         </a>
+        <p>
+          <button type="button" class="btn btn-secondary" onclick="themeSong.play()">🔊</button>
+          <button type="button" class="btn btn-secondary" onclick="themeSong.stop()">🔇</button>
+        </p>
       </nav>
     </header>
 
   <!-- Game Card -->
     <section>
       <div class="container">
-        <div class="card" style="width: 18rem;">
-          <img src="assets/images/tuco1.jpg" class="card-img-top" alt="tuco">
+        <div class="card mx-auto" style="width: 18rem" id="gameCard">
+          <img src="assets/images/tuco1.jpg" class="card-img-top" id="tuco" alt="tuco">
           <div class="card-body">
-            <h3 class="card-title">_ _ _ _ _ _ _</h3>
-            <p class="card-text">Pick any letter to take shots at Tuco's noose to free him from the gallows.</p>
-            <p class="card-text">Hint: </p>
+            <h4 class="card-title" id="subjectWord">_ _ _ _ _ _ _</h4>
+            <p class="card-text" id="caption">Pick any letter to take shots at Tuco's noose to free him from the gallows.</p>
+            <p class="card-text">Hint: Superheroes. And there are no spaces..</p>
           </div>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item" id="wrong-guesses">Wrong Guesses: </li>
-            <li class="list-group-item" id="guesses-left">Guesses Left: </li>
-            <li class="list-group-item" id="winCounter">Wins: </li>
-            <li class="list-group-item" id="lossCounter">Losses: </li>
+            <li class="list-group-item">Wrong Guesses: <span id="wrongLetters"></span></li>
+            <li class="list-group-item">Guesses Left: <span id="remainingGuesses"></span></li>
+            <li class="list-group-item">Wins: <span id="winCounter"></span></li>
+            <li class="list-group-item">Losses: <span id="lossCounter"></span></li>
           </ul>
         </div>
       </div> 
