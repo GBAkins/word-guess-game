@@ -44,7 +44,7 @@ function newGame () {
     document.getElementById("lossCounter").innerHTML = losses;
     document.getElementById("wrongLetters").innerHTML = wrongGuesses;
     document.getElementById("caption").innerHTML = "Pick any letter to take shots at Tuco's noose to free him from the gallows.";
-    document.getElementById("tuco").src = "assets/images/tuco.jpg"
+    document.getElementById("tuco").src = "assets/images/tucoFirst.jpg"
 
 }
 
