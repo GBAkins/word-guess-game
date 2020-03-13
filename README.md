@@ -6,7 +6,7 @@ This is a simple hangman game.
 ![alt text](https://github.com/GBAkins/word-guess-game/blob/master/assets/images/hangman-card.PNG "Hangman")
 
 ## Instructions
-Simply start guessing letters using your keyboard. There were no spaces used in the possible answers. You can click the sound button in the top right for a more immersive experience, and click the mute button to stop the music. Clicking the noose in the top left, begins a new round.
+Simply start guessing letters using your keyboard. There were no spaces used in the possible answers. You can click the sound button in the top right for a more immersive experience, and click the mute button to stop the music. Clicking the noose in the top left begins a new round.
 
 ## Built With
 - HTML
